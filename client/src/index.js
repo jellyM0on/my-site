@@ -1,6 +1,6 @@
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { annotate } from 'rough-notation';
+import { addNotations } from './components/addNotations';
 
 
 function component() {
@@ -10,4 +10,6 @@ function component() {
     
     return element;
   }
+
+  addNotations();
   
