@@ -1,5 +1,7 @@
 import './styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { annotate } from 'rough-notation';
+
 
 function component() {
     const element = document.createElement('div');
