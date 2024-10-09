@@ -26,20 +26,9 @@ module.exports = {
   module: {
     rules: [
         {
-            test: /\.css$/,
-            include: /src/,
-            use: [MiniCssExtractPlugin.loader, 'style-loader', 'css-loader']
-        }, 
-        {
-            test: /\.css$/,
-            include: path.resolve(__dirname, 'node_modules'),
-            use: ['style-loader', 'css-loader']
-        },
-        {
-            test: /\.(scss|sass)$/i,
-            use: [
-              MiniCssExtractPlugin.loader,'css-loader','sass-loader']
-        },
+            test: /\.s?css$/i,
+            use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+          },
         {
             test: /\.(png|svg|jpg|jpeg)$/i,
             type: 'asset/resource'
