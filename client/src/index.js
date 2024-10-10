@@ -1,15 +1,9 @@
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { addNotations } from './components/addNotations';
+import { addProjects } from './components/addProject';
 
 
-function component() {
-    const element = document.createElement('div');
-    element.textContent = 'test2'; 
-   
-    
-    return element;
-  }
+addProjects(); 
+addNotations();
 
-  addNotations();
-  

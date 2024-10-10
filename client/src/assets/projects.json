@@ -1,0 +1,44 @@
+{
+    "projects": [
+        {
+            "img": 0, 
+            "imgAlt": 0,
+            "title": "This project",
+            "link": "test",
+            "stack": ["javascript", "webpack", "aws"],
+            "description": "I'm currently building this website to learn more about different AWS services."
+        },
+        {
+            "img": "docs-proj-2", 
+            "imgAlt": "BiyaHero",
+            "title": "DFS Route Calculator - BiyaHero",
+            "link": "https://github.com/jellyM0on/desAlgo-wbp",
+            "stack": ["javascript", "webpack"],
+            "description": "Worked with a team to develop a web application which calculates all the routes from a source to a target destination in the Philippine Railway System and EDSA Carousel System utilizing the DFS algorithm."
+        },
+        {
+            "img": "docs-proj-1", 
+            "imgAlt": "booksleeper",
+            "title": "Fullstack Blog - booksleeper, a poetry blog",
+            "link": "https://github.com/jellyM0on/book-sleeper-blog",
+            "stack": ["react", "express", "mongodb", "aws"],
+            "description": "Built and designed a full-stack blog website hosted on an AWS EC2 instance with admin authentication using JSON Web Token to access a Management System to handle post creation, modification, and deletion through a REST API."
+        },
+        {
+            "img": "docs-proj-4", 
+            "imgAlt": "PasigScholarDB",
+            "title": "Database Manager - Pasig ScholarDB",
+            "link": "https://github.com/jellyM0on/infoman-dbmanager",
+            "stack": ["javascript", "express", "mysql"],
+            "description": "Worked with a team to develop a database system based on the Pasig City Scholarship Renewal form to store applications and provide centralized storage."
+        },
+        {
+            "img": "docs-proj-3", 
+            "imgAlt": "OCR Translator",
+            "title": "OCR Translator - jpOCR",
+            "link": "https://github.com/jellyM0on/ocr-translator",
+            "stack": ["electronjs"],
+            "description": "Built an application which recognizes Japanese text from a user-selected desktop window using an OCR engine and translates it to English."
+        }
+    ]
+}
