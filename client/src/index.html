@@ -10,7 +10,7 @@
         <section id="about" class="container py-5">
             <div class="row">
                 <div class="col-md-8">
-                    <p class="m-0">Hello Visitor # <span id="visitor-num">123</span>!</p>
+                    <p class="m-0">Hello Visitor !</p>
                     <h1>I'm <strong class="nt-highlight-main">Ylana Ong,</strong></h1>
                     <p>a 3rd year <span class="nt-underline">Computer Science</span> student at the 
                     <span class="nt-underline">Polytechnic University of the Philippines Manila</span> learning 
@@ -50,26 +50,76 @@
             <div class="row">
                 <h2 class="fw-bold col-2">My Projects</h2>
                 <div class="col-10 container-fluid">
-                    <ul class="ms-5 row flex-nowrap overflow-auto gap-3 custom-scrollbar">
-                        <li class="project-card col-6 ">
-                                <img class="img-fluid" src="./assets/docs-proj-2.png" alt="Project 1 Img">
-                                <div class="p-1  d-flex flex-column align-items-center justify-content-center">
-                                    <p class="m-0 p-0 fw-bold">DFS Route Calculator - "BiyaHero"</p>
-                                    <button class="btn"><img src="./assets/github.svg" alt="Github"></button>
+                    <ul class="ms-5 row flex-nowrap overflow-auto gap-3 custom-scrollbar list-unstyled">
+                        <li class="col-xs-8 col-md-6">
+                            <div class="py-1  d-flex flex-column ">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="m-0 p-0 fw-bold">This website</p>
+                                    <button class="btn m-0 p-0"><img src="./assets/github.svg" alt="Github"></button>
                                 </div>
-                        </li>
-                        <li class="project-card col-6 ">
-                            <img class="img-fluid" src="./assets/docs-proj-1.png" alt="Project 1 Img">
-                            <div class="p-1  d-flex flex-column align-items-center justify-content-center">
-                                <p class="m-0 p-0 fw-bold">Fullstack Blog - "booksleeper, a poetry blog"</p>
-                                <button class="btn"><img src="./assets/github.svg" alt="Github"></button>
+                                <ul class="list-unstyled d-flex flex-row">
+                                    <li><img src="./assets/javascript.svg" alt="JS Logo"></li>
+                                    <li><img src="./assets/webpack.svg" alt="Webpack Logo"></li>
+                                    <li><img src="./assets/aws.svg" alt="AWS Logo"></li>
+                                </ul>
+                                <p class="mt-1">I built this website to learn more about different AWS services.</p>
                             </div>
                         </li>
-                        <li class="project-card col-6 ">
+                        <li class="col-xs-8 col-md-6">
+                                <img class="img-fluid" src="./assets/docs-proj-2.png" alt="Project 1 Img">
+                                <div class="py-1 d-flex flex-column ">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="m-0 p-0 fw-bold">DFS Route Calculator - "BiyaHero"</p>
+                                        <button class="btn m-0 p-0"><img src="./assets/github.svg" alt="Github"></button>
+                                    </div>
+                          
+                                    <ul class="list-unstyled d-flex flex-row">
+                                        <li><img src="./assets/javascript.svg" alt="JS Logo"></li>
+                                        <li><img src="./assets/webpack.svg" alt="Webpack Logo"></li>
+                                    </ul>
+                                   
+                                    <p>
+                                        Worked with a team to develop a web application which calculates all the routes from a source to a target destination in the Philippine Railway System and EDSA Carousel System utilizing the DFS algorithm.
+                                    </p>
+                                </div>
+                        </li>
+                        <li class="col-xs-8 col-md-6 ">
+                            <img class="img-fluid" src="./assets/docs-proj-1.png" alt="Project 1 Img">
+                            <div class="p-1  d-flex flex-column">
+                                <p class="m-0 p-0 fw-bold">Fullstack Blog - "booksleeper, a poetry blog"</p>
+                                <ul class="list-unstyled d-flex flex-row">
+                                    <li><img src="./assets/react.svg" alt="React Logo"></li>
+                                    <li><img src="./assets/express.svg" alt="Express Logo"></li>
+                                    <li><img src="./assets/mongodb.svg" alt="MongoDB Logo"></li>
+                                    <li><img src="./assets/aws.svg" alt="AWS Logo"></li>
+                                </ul>
+                                <p>Built and designed a full-stack blog website hosted on an AWS EC2 instance with admin authentication using JSON Web Token to access a Management System to handle post creation, modification, and deletion through a REST API.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="col-xs-8 col-md-6">
+                            <img class="img-fluid" src="./assets/docs-proj-4.png" alt="Project 1 Img">
+                            <div class="p-1  d-flex flex-column">
+                                <p class="m-0 p-0 fw-bold">Database Manager - "Pasig ScholarDB"</p>
+                                <ul class="list-unstyled d-flex flex-row">
+                                    <li><img src="./assets/javascript.svg" alt="JS Logo"></li>
+                                    <li><img src="./assets/express.svg" alt="Express Logo"></li>
+                                    <li><img src="./assets/mysql.svg" alt="MySQL Logo"></li>
+                                </ul>
+                                <p>Worked with a team to develop a database system based on the Pasig City Scholarship Renewal form to store applications and provide centralized storage.</p>
+                            </div>
+                        </li>
+
+                        <li class="col-xs-8 col-md-6">
                             <img class="img-fluid" src="./assets/docs-proj-3.png" alt="Project 1 Img">
-                            <div class="p-1  d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-1  d-flex flex-column">
                                 <p class="m-0 p-0 fw-bold">OCR Translator - "jpOCR"</p>
-                                <button class="btn"><img src="./assets/github.svg" alt="Github"></button>
+                                <ul class="list-unstyled d-flex flex-row">
+                                    <li><img src="./assets/electronjs.svg" alt="ElectronJS Logo"></li>
+                                   
+                                </ul>
+                               <p>Built an application which recognizes Japanese text from a user-selected desktop window using an OCR engine and translates it to English.
+                            </p>
                             </div>
                         </li>
                        
@@ -80,6 +130,9 @@
             
            
         </section>
+        <footer class="container">
+            <p>Icons from icons8.com</p>
+        </footer>
     </main>
 </body>
 </html>
