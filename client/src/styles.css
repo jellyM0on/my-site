@@ -1,0 +1,7 @@
+.custom-scrollbar::-webkit-scrollbar {
+    height: 5px; 
+  }
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: black; /* Color of the scroll thumb */
+}
