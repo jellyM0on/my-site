@@ -26,9 +26,7 @@ function addProjects(){
     let projectHtml = ''; 
     projectList.forEach(p => {
         projectHtml += addProject(p.img, p.imgAlt, p.title, p.link, p.stack, p.description); 
-    })
-    
-    console.log(projectHtml)
+    });
 
     const projectContainer = document.querySelector('#project-container');
     projectContainer.innerHTML = projectHtml; 
