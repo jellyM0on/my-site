@@ -17,14 +17,14 @@ jobs:
       with: 
         node-version: '21'
     
-    - name: Change directory
-      run: cd client
-      
     - name: Install dependencies
       run: npm install
+      working-directory: client
 
     - name: Build with webpack
       run: npm run build
+      working-directory: client
+
 
     - name: Configure credentials
       uses: aws-actions/configure-aws-credentials@v1
