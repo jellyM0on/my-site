@@ -34,4 +34,4 @@ jobs:
         aws-region: AWSRG 
 
     - name: Deploy site to S3 bucket
-      run: aws s3 sync ./dist/ s3://${{ secrets.BUCKET }} --delete
+      run: aws s3 sync client/dist/ s3://${{ secrets.BUCKET }} --delete
