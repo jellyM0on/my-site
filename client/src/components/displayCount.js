@@ -18,7 +18,11 @@ async function incrementCount(){
 async function displayCount(){
     const data = await incrementCount(); 
     const counterDisplay = document.getElementById('counter'); 
-    counterDisplay.innerText = data; 
+    if(!data){
+        counterDisplay.innerText = '';
+    } else{
+        counterDisplay.innerText = `#${data}`;
+    }
 }
 
 export { displayCount }
