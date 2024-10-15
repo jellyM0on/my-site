@@ -45,3 +45,6 @@ coverage/
 *.swo
 *.tmp
 *.temp
+
+# Cypress screenshots
+screenshots/ 
