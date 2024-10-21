@@ -6,7 +6,7 @@
             "title": "This project",
             "link": "test",
             "stack": ["javascript", "webpack", "aws"],
-            "description": "I'm currently building this website to learn more about different AWS services."
+            "description": "I'm currently building this website to learn more about different AWS services, CI/CD, and Cypress Testing."
         },
         {
             "img": "docs-proj-2", 
