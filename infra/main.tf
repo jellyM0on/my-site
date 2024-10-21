@@ -5,6 +5,9 @@ terraform {
             version = "~> 5.0"
         }
     }
+    backend "s3"{
+            
+    }
 }
 
 variable "AWSRG" {
@@ -34,6 +37,11 @@ resource "aws_dynamodb_table" "db-table" {
         type = "S"
     }
     billing_mode = "PAY_PER_REQUEST"
+
+    on_demand_throughput{
+        max_read_request_units = 1
+        max_write_request_units = 1
+    }
 }
 
 # Lambda Policy with Database
@@ -121,7 +129,7 @@ resource "aws_apigatewayv2_stage" "prod-stage" {
   default_route_settings{
     data_trace_enabled = false
     detailed_metrics_enabled = false
-    throttling_burst_limit = 5
+    throttling_burst_limit = 4
     throttling_rate_limit = 4
   }
 }
