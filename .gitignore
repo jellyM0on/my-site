@@ -48,3 +48,10 @@ coverage/
 
 # Cypress screenshots
 screenshots/ 
+
+# Terraform
+*.tfstate
+*.tfstate*
+*.terraform
+*.terraform*
+*.tfplan*
