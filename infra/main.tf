@@ -122,6 +122,6 @@ resource "aws_apigatewayv2_stage" "prod-stage" {
     data_trace_enabled = false
     detailed_metrics_enabled = false
     throttling_burst_limit = 5
-    throttling_rate_limit = 5
+    throttling_rate_limit = 4
   }
 }
