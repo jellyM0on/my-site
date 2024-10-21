@@ -1,12 +1,12 @@
 {
     "projects": [
         {
-            "img": 0, 
-            "imgAlt": 0,
+            "img": "docs-proj-5", 
+            "imgAlt": "My Site",
             "title": "This project",
-            "link": "test",
+            "link": "https://github.com/jellyM0on/my-site",
             "stack": ["javascript", "webpack", "aws"],
-            "description": "I built this website to learn more about different AWS services, CI/CD, and Cypress Testing."
+            "description": "I built this website to learn more about AWS. The files are stored in a S3 bucket served through CloudFront. Its visitor counter works through a Lambda API. It has a CI/CD pipeline to automatically update the frontend, backend infra through IaC, and conduct tests."
         },
         {
             "img": "docs-proj-2", 
