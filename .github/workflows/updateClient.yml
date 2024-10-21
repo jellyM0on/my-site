@@ -62,7 +62,7 @@ jobs:
 
       - name: Run Cypress
         env:
-          BASEURL: 'https://ylana-ong.com/'
+          BASE_URL: 'https://ylana-ong.com/'
           CYPRESS_API: ${{ secrets.CYPRESS_API }}
         run: npx cypress run
         
