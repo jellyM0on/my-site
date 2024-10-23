@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "img": "docs-proj-5", 
+            "img": "docs-mysite", 
             "imgAlt": "My Site",
             "title": "This project",
             "link": "https://github.com/jellyM0on/my-site",
