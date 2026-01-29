@@ -1,0 +1,25 @@
+{
+  "experience": [
+    {
+      "position": "Automation Developer Intern",
+      "company": "Trend Micro, Ortigas",
+      "date": "Aug 2025 - Oct 2025",
+      "description": "Developed and deployed a Hashsets Crawler module through AWS ECS, automating the collection and packaging of hash set data, integrating with S3 for storage. Developed a Hashsets Processor module that polls SQS for hash set events, retrieves and processes uploaded datasets in S3, detects inconsistencies and missing hash mappings, and sends notifications via email and Jira Service Desk. Developed a PoC for an LLM-powered module to query a job registry database, process data, and generate powerpoint reports, leveraging AI for data retrieval and summarization",
+      "keywords": ["python", "aws", "cybersecurity"]
+    },
+    {
+      "position": "Software Developer Intern",
+      "company": "Likha-iT, Makati",
+      "date": "Nov 2024 - May 2025",
+      "description": "Implemented new features in the employee health page and API to allow users to view their past stress check assessment results and access ongoing surveys, enhancing data accessibility and user experience. Enabled healthcare administrators to edit employee details directly from the health check assessment event’s user list page, streamlining admin processes. Resolved various other improvement tasks and bug tickets.",
+      "keywords": ["react", "typescript", "rails", "ruby", "mysql", "aws"]
+    },
+    {
+      "position": "Software QA Intern ",
+      "company": "PurpleBug Inc., Makati",
+      "date": "Oct 2023 - Jan 2024",
+      "description": "Conducted manual testing to evaluate and ensure web and mobile application usability and overall quality through manual testing, practicing consistent attention to detail. Wrote more than 95 bug reports with detailed documentation for developers’ efficient issue resolution. Accomplished various research, documentation, and automation tasks, assisting the rest of the team.",
+      "keywords": ["black box testing", "documentation"]
+    }
+  ]
+}

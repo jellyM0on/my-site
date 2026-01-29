@@ -1,12 +1,20 @@
 {
   "projects": [
     {
+      "img": "docs-soundscene",
+      "imgAlt": "Soundscene",
+      "title": "SoundScene",
+      "link": "https://github.com/jellyM0on/soundscene",
+      "stack": ["react", "express", "mysql", "aws", "supabase"],
+      "description": "Worked with a team to develop an event discovery and ticketing web application that allows users to explore and attend various events. Implemented features such as RBAC, event browsing, ticket registration, email notifications, and more."
+    },
+    {
       "img": "docs-mysite",
       "imgAlt": "My Site",
       "title": "This project",
       "link": "https://github.com/jellyM0on/my-site",
       "stack": ["javascript", "webpack", "aws"],
-      "description": "I built this website to learn more about AWS. The files are stored in a S3 bucket served through CloudFront. Its visitor counter works through a Lambda API. It has a CI/CD pipeline to automatically update the frontend, backend infra through IaC, and conduct tests."
+      "description": "I built this website to learn more about AWS hosting. The files are stored in a S3 bucket served through CloudFront. It previously had a visitor counter using Lambda and DynamoDB."
     },
     {
       "img": "docs-proj-5",
@@ -17,12 +25,28 @@
       "description": "Multi-role request approval system with a configurable 3-step approval workflow where users can submit and track requests, and those with appropriate roles can submit their approval. Internship project for Likha."
     },
     {
+      "img": "docs-booking",
+      "imgAlt": "Classroom Booking System",
+      "title": "Classroom Booking System",
+      "link": "https://github.com/jellyM0on/classroom-booking-sys",
+      "stack": ["react", "express", "mysql", "supabase"],
+      "description": "Developed a full-stack web application designed for managing room reservations across multiple facilities and departments in an educational institution."
+    },
+    {
       "img": "docs-proj-2",
       "imgAlt": "BiyaHero",
       "title": "DFS Route Calculator - BiyaHero",
       "link": "https://github.com/jellyM0on/desAlgo-wbp",
       "stack": ["javascript", "webpack"],
       "description": "Worked with a team to develop a web application which calculates all the routes from a source to a target destination in the Philippine Railway System and EDSA Carousel System utilizing the DFS algorithm."
+    },
+    {
+      "img": "docs-throwmaster",
+      "imgAlt": "Web Game - Throwmaster",
+      "title": "Web Game - Throwmaster",
+      "link": "https://github.com/jellyM0on/hci-throwmaster",
+      "stack": ["react"],
+      "description": "Developed a simple web game that promotes proper waste handling habits through engaging gameplay mechanics."
     },
     {
       "img": "docs-proj-1",
