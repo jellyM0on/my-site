@@ -1,36 +1,106 @@
-import projects from '../assets/projects.json'; 
+import projects from "../assets/projects.json";
 
-const requireImages = require.context('../assets', false, /\.(png|jpe?g|svg)$/);
+const requireImages = require.context("../assets", false, /\.(png|jpe?g|svg)$/);
 
-function addProject(img, imgAlt, title, link,  stack, description){
-    return `
-    <li class="col-xs-8 col-md-6">
-        ${img != 0 ?  `<img class="img-fluid" src=${requireImages(`./${img}.png`)} alt=${imgAlt}></img>` : `` }
-        <div class="py-1 d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-center">
-                <p class="m-0 p-0 fw-bold">${title}</p>
-                <a href=${link} target="_blank"><img src=${requireImages('./github.svg')} alt="Github"></a>
+function renderStackBadges(stack = []) {
+  return stack
+    .map(
+      (s) =>
+        `<span class="badge rounded-pill text-bg-light border me-2 mb-2 fw-medium fw-light">${s}</span>`,
+    )
+    .join("");
+}
+
+function addProjectCard(img, imgAlt, title, link, stack, description) {
+  const hasImg = img && img !== 0;
+
+  return `
+    <li class="col-12 col-md-6 col-lg-4">
+      <div class="h-100 d-flex flex-column">
+        ${
+          hasImg
+            ? `
+          <div class="ratio ratio-16x9 rounded-3 overflow-hidden bg-light">
+            <img
+              class="w-100 h-100"
+              style="object-fit: cover;"
+              src="${requireImages(`./${img}.png`)}"
+              alt="${imgAlt || title}"
+              loading="lazy"
+            />
+          </div>
+        `
+            : ``
+        }
+
+        <div class="pt-4 d-flex flex-column flex-grow-1">
+          <div class="d-flex justify-content-between align-items-start gap-3">
+            <div>
+              <p class="m-0 fw-bold">${title}</p>
+              <div class="d-flex flex-wrap mt-2">
+                ${renderStackBadges(stack)}
+              </div>
             </div>
-                            
-            <ul class="list-unstyled d-flex flex-row">
-               ${stack.map((s =>  `<li><img src=${requireImages(`./${s}.svg`)} alt="${s} Logo"></li>`)).join('')}
-            </ul>
-                                    
-            <p>${description}</p>
+
+            ${
+              link
+                ? `
+              <a
+                class="btn btn-sm btn-outline-dark d-inline-flex align-items-center gap-2"
+                href="${link}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="${requireImages("./github.svg")}"
+                  alt="GitHub"
+                  width="16"
+                  height="16"
+                />
+                <span>Code</span>
+              </a>
+            `
+                : ``
+            }
+          </div>
+
+          <p class="mt-3 mb-0 text-muted flex-grow-1">
+            ${description || ""}
+          </p>
         </div>
-    </li>`;
+      </div>
+    </li>
+  `;
 }
 
-function addProjects(){
-    const projectList = projects.projects; 
-    let projectHtml = ''; 
-    projectList.forEach(p => {
-        projectHtml += addProject(p.img, p.imgAlt, p.title, p.link, p.stack, p.description); 
-    });
+function addProjects() {
+  const projectList = projects.projects || [];
+  let projectHtml = "";
 
-    const projectContainer = document.querySelector('#project-container');
-    projectContainer.innerHTML = projectHtml; 
+  projectList.forEach((p) => {
+    projectHtml += addProjectCard(
+      p.img,
+      p.imgAlt,
+      p.title,
+      p.link,
+      p.stack,
+      p.description,
+    );
+  });
+
+  const projectsSection = document.querySelector("#projects");
+
+  projectsSection.innerHTML = `
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-4">/ Projects</h2>
+
+        <ul id="project-container" class="row g-5 list-unstyled">
+          ${projectHtml}
+        </ul>
+      </div>
+    </div>
+  `;
 }
 
-export {addProjects}; 
-
+export { addProjects };
