@@ -1,62 +1,59 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const Dotenv = require('dotenv-webpack'); 
-const webpack = require('webpack');
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
+const webpack = require("webpack");
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
   entry: {
-    index: path.resolve(__dirname, 'src/index.js')
-},
-  output: {
-    path: path.resolve(__dirname, 'dist'), 
-      filename: '[name][contenthash].js', 
-      clean: true, 
-      assetModuleFilename: '[name][ext]'
+    index: path.resolve(__dirname, "src/index.js"),
   },
-  devtool: 'source-map',
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name][contenthash].js",
+    clean: true,
+    assetModuleFilename: "[name][ext]",
+  },
+  devtool: "source-map",
   devServer: {
-        static: {
-            directory: path.resolve(__dirname, 'dist')
-        }, 
-        open: true, 
-        hot: true, 
-        compress: true, 
-        historyApiFallback: true
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
-        {
-            test: /\.s?css$/i,
-            use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
-          },
-        {
-            test: /\.(png|svg|jpg|jpeg)$/i,
-            type: 'asset/resource'
-        }, 
-        {
-            test: /\.html$/, 
-            use: ['html-loader']
-        }
-    ]
+      {
+        test: /\.s?css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.html$/,
+        use: ["html-loader"],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-        title: 'test',
-        filename: 'index.html',
-        template: 'src/index.html',
-        chunks: ['index'], 
-        inject: 'head'
-    }), 
+      title: "test",
+      filename: "index.html",
+      template: "src/index.html",
+      chunks: ["index"],
+      inject: "head",
+    }),
     new MiniCssExtractPlugin({
-        filename: '[name].css', 
-    }), 
+      filename: "[name].css",
+    }),
     new Dotenv({
-      path: './.env'
+      path: "./.env",
     }),
-    new webpack.DefinePlugin({
-      'process.env.API': JSON.stringify(process.env.API),
-    }),
-]
+  ],
 };
