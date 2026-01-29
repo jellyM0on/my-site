@@ -24,10 +24,8 @@
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
-    "boostrap": "^2.0.0",
     "bootstrap": "^5.3.3",
-    "lodash": "^4.17.21",
-    "rough-notation": "^0.5.1"
+    "lodash": "^4.17.21"
   },
   "description": ""
 }
