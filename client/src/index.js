@@ -1,10 +1,11 @@
-import './styles.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { addNotations } from './components/addNotations';
-import { addProjects } from './components/addProjects';
-import { displayCount } from './components/displayCount';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { addExperiences } from "./components/addExperience";
+import { addProjects } from "./components/addProjects";
+import { addScrollToTopButton } from "./components/addScrollToTopButton";
+import { addWaveDecor } from "./components/addWaveDecor";
+import "./styles.css";
 
-displayCount(); 
-addProjects(); 
-addNotations();
-
+addScrollToTopButton();
+addWaveDecor();
+addExperiences();
+addProjects();
