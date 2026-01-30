@@ -29,7 +29,7 @@
       "imgAlt": "Classroom Booking System",
       "title": "Classroom Booking System",
       "link": "https://github.com/jellyM0on/classroom-booking-sys",
-      "stack": ["react", "express", "mysql", "supabase"],
+      "stack": ["react", "express", "mysql", "firebase"],
       "description": "Developed a full-stack web application designed for managing room reservations across multiple facilities and departments in an educational institution."
     },
     {
