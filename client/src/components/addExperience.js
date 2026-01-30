@@ -39,9 +39,9 @@ function addExperience(position, company, date, description, keywords) {
       <div class="pb-4 flex-grow-1">
         <p class="fw-bold mb-1">${position}</p>
 
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
           <p class="text-muted mb-0">${company}</p>
-          <p class="text-muted small mb-0">${date}</p>
+          <p class="text-muted small mb-0 mt-1 mt-md-0">${date}</p>
         </div>
 
         ${renderKeywords(keywords)}
